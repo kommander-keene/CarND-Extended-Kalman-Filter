@@ -63,6 +63,8 @@ class KalmanFilter {
 
   // measurement covariance matrix
   Eigen::MatrixXd R_;
+  private:
+    float normalizeAngles(float angle);
 };
 
 #endif // KALMAN_FILTER_H_
